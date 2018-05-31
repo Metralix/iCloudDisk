@@ -47,7 +47,7 @@
 			</action>
 			
 			<action name="logup" class="cn.zju.action.LogupAction" method="logup">
-				<result name="success">/WEB-INF/index.jsp</result>
+				<result type="redirect" name="success">${pageContext.request.contextPath}/requestin.action</result>
 				<result name="error">/WEB-INF/jsp/400.html</result>
 				<result name="input">/WEB-INF/jsp/400.html</result>
 			</action>
